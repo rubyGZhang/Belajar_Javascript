@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Operator Logika</title>
+    </head>
+    <body>
+        <script>
+            //Deklarasi variabel
+            var angkaPertama = 20;
+            var angkaKedua = 25;
+            var hasil = false;
+
+            //Operasi Logika &&
+            document.write(`Operasi Logika && <br>`);
+            hasil = angkaPertama > angkaKedua && angkaPertama > 50;
+            document.write(`${angkaPertama} > ${angkaKedua} && ${angkaPertama} > 50 = ${hasil} <br>`);
+
+            //Operasi Logika ||
+            document.write(`Operasi Logika || <br>`);
+            hasil = angkaPertama > angkaKedua || angkaPertama < 50;
+            document.write(`${angkaPertama} > ${angkaKedua} || ${angkaPertama} < 50 = ${hasil} <br>`);
+
+            //Operasi Logika !
+            document.write(`Operasi Logika ! <br>`);
+            hasil = !(angkaPertama > angkaKedua);
+            document.write(`!(${angkaPertama} > ${angkaKedua}) = ${hasil} <br>`);
+            
+        </script>
+    </body>
+</html>

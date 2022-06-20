@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar Variabel Javascript</title>
+</head>
+<body>
+    <script>
+        //Deklarasi Variabel dalam Javascript
+        var name = "ekokurniadi.com";
+        var visitorCounter = 100;
+        var active = true;
+        let urlWebsite = "https://ekokurniadi.com";
+
+        //Menampilkan Alert dalam website menggunakan Javascript
+        //alert("Selamat datang di website " + name + "terima kasih sudah berkunjung");
+
+        //Menampilkan isi variabel ke halaman website menggunakan Javascript
+        document.write("Nama Situs : " + name + "<br>");
+        document.write("Jumlah Pengunjung Hari ini : " + visitorCounter + "<br>");
+        document.write("Status Keaktifan : " + active + "<br>");
+        document.write("URL Website : " + "<a href="+urlWebsite+">"+urlWebsite+"</a>" + "<br>");
+
+        //Mengganti isi variable name
+        name = 100;
+        document.write("Ubah isi variabel name menjadi angka");
+        document.write("Variable name : " + name + "<br>");
+
+        //Menggandi isi variabel visitorCounter
+        visitorCounter = 9.5;
+        document.write("Ubah isi variabel visitorCounter menjadi desimal");
+        document.write("Variable visitorCounter : " + visitorCounter + "<br>");
+
+        //Penjumlahkan variabel angka dan string
+        document.write("Penjumlahkan variabel angka dan string");
+        var angkaNumber = 10;
+        var angkaString = "10.250";
+        var hasilPenjumlahan = angkaNumber + parseFloat(parseFloat(angkaString).toFixed(1));
+        document.write("Hasil Penjumlahan : " + hasilPenjumlahan + "<br>");
+
+        // Membuat variabel array dalam Javascript
+        document.write ("Membuat variabel dalam array dalam javascript <br>");
+        var arrayUser = ['Jhon', 'Robert', 'David', 'Mark', 'Bob',2,5,6];
+        document.write("Menampilkan nama user urutan ke 0 dalam array => " + arrayUser[0] + "<br>");
+        document.write("Menampilkan nama user urutan ke 1 dalam array => " + arrayUser[1] + "<br>");
+        document.write("Menampilkan nama user urutan ke 2 dalam array => " + arrayUser[2] + "<br>");
+        document.write("Menampilkan nama user urutan ke 3 dalam array => " + arrayUser[3] + "<br>");
+        document.write("Menampilkan nama user urutan ke 4 dalam array => " + arrayUser[4] + "<br>");
+
+        // Menampilkan data Array menggunakan perulangan
+        document.write ("Membuat variabel dalam array dalam javascript <br>");
+        for(var i=0;i<arrayUser.length;i++){
+            document.write("Menampilkan nama user urutan ke " + i + " dalam array => " + arrayUser[i] + "<br>");
+        }
+
+        //Menampilkan data object
+        document.write ("Menampilkan data Object <br>");
+        var object = {
+            "name" : "Jhon",
+            "age" : 50,
+            "address" : "Jakarta"
+        }
+        document.write("Menampilkan variable object name => " + object.name + "<br>");
+        document.write("Menampilkan variable object age => " + object.age + "<br>");
+        document.write("Menampilkan variable object address => " + object.address + "<br>");
+    </script>
+</body>
+</html>
